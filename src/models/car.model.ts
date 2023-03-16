@@ -27,6 +27,11 @@ export class Car extends Entity {
   })
   price?: number;
 
+  @property({
+    type: 'string',
+  })
+  carDealshipName?: string;
+
   constructor(data?: Partial<Car>) {
     super(data);
   }
